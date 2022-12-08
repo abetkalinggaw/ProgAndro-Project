@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MiniProject</string>
+    <string name="checked">checked</string>
+    <string name="unchecked">unchecked</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="40dp"
+    >
+
+    <TextView
+        android:id="@+id/txv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesawat Uhuy!!"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+
+
+    <TextView
+        android:id="@+id/txv_asal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Asal Keberangkatan"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radiogr_asal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_asalYogyakarta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yogyakarta"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_asalJakarta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jakarta"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_asalBali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bali"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Kota Tujuan"
+        android:layout_marginTop="20dp"
+        />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_tujuanYogyakarta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yogyakarta"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_tujuanJakarta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jakarta"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_tujuanBali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bali"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pilih tanggal"
+        android:layout_gravity="center"
+     />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     />
+
+    <Button
+        android:id="@+id/btn_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Cari Keberangkatan"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
